@@ -7,4 +7,4 @@ const accessVerification = async (req, res) => {
     }
 }
 
-export default accessVerification
+    export default accessVerification

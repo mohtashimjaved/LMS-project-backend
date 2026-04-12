@@ -1,7 +1,5 @@
 import express, { Router } from "express";
 import mongoose from "./db/index.js";
-import User from "./model/index.js";
-import bcrypt from "bcrypt"
 import helmet from "helmet";
 import cors from "cors"
 import router from "./routes/index.js";
@@ -19,6 +17,8 @@ mongoose.connection.on("open", () => {
 mongoose.connection.on("error", (err) => {
     console.log("DB error occured" , err);
 })
+
+
 
 app.listen(process.env.PORT, () => {
     console.log("testing");
